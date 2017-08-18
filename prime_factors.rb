@@ -6,7 +6,7 @@ class Integer
 			return false
 		end
 		(2..Math.sqrt(self)).to_a.each do |x|
-			if (self % x == 0) && (self != x)
+			if (self % x == 0)
 				return false
 			end
 		end
