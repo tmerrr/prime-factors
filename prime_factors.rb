@@ -4,11 +4,9 @@ class Integer
 	def prime?
 		if self <= 1
 			return false
-		elsif (self == 2)
-			return true
 		end
 		(2..Math.sqrt(self)).to_a.each do |x|
-			if (self % x == 0) && (self / x != 1)
+			if (self % x == 0) && (self != x)
 				return false
 			end
 		end
